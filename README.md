@@ -96,6 +96,8 @@ were used, and what seed variable were used
 
 ## Detailed Usage
 
+*** 
+
 [train_word2vec_model.py](https://github.com/pjshoemark/lexvarinduction/blob/master/code/train_word2vec_model.py)
 
 <dl>
@@ -157,6 +159,7 @@ were used, and what seed variable were used
 </dd>
 </dl>
 
+***
 
 [word2vec_analogy_generation.py](https://github.com/pjshoemark/lexvarinduction/blob/master/code/word2vec_analogy_generation.py)
 
@@ -242,6 +245,7 @@ Otherwise, set an integer value less than the total number of seed pairs.
 </dl>
 
 
+***
 
 [evaluate_generated_analogies.py](https://github.com/pjshoemark/lexvarinduction/blob/master/code/evaluate_generated_analogies.py)
 
@@ -310,7 +314,7 @@ notes about pairs which were difficult to evaluate
 
 
 
-
+***
 
 
 ## Requirements

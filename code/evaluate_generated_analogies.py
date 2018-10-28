@@ -291,7 +291,7 @@ if __name__ == "__main__":
 
 	parser = argparse.ArgumentParser()
 	parser.add_argument("-s", "--seed_variables_path", type=str, default='/data/input/seed_variables.tsv', help="path to list of seed variables")
-	parser.add_argument("-p", "--generated_pairs_path", type=str, default='/data/output/generated_analogy_pairs_embeddings_skipgram_dim500_window10_mincount50_k10000_t034_m10_u001_l-05_C0_c50_ddiff_of_mean_vecs_rsim_D0.json', help="path to list of automatically generated variant pairs")
+	parser.add_argument("-p", "--generated_pairs_path", type=str, default='/data/output/generated_analogy_pairs_embeddings_skipgram_dim500_window10_mincount50_k10000_t00_m10_ddiff_of_mean_vecs_rsim.json', help="path to list of automatically generated variant pairs")
 	parser.add_argument("-g", "--good_pairs_path", type=str, default='/data/working/good_analogies.tsv', help="path to list of pairs already evaluated as good")
 	parser.add_argument("-b", "--bad_pairs_path", type=str, default='/data/working/bad_analogies.tsv', help="path to list of pairs already evaluated as bad")
 	parser.add_argument("-a", "--grey_area_pairs_path", type=str, default='/data/working/grey_area_analogies.tsv', help="path to list of grey area pairs")
@@ -307,4 +307,3 @@ if __name__ == "__main__":
 	write_output_and_log(options, precision_at_k, average_precision)
 	plot_precision_recall_curve(p_values,r_values,options)
 	plot_precision_at_k_curve(p_values,k_values,options)
-
